@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aksha K. S — Portfolio</title>
+  <meta name="description" content="Portfolio of Aksha K. S — BSc Computer Science student skilled in Communication, AI, Data Science & Coding." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa6b2; --accent:#7dd3fc;
+      --glass: rgba(255,255,255,0.03);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%; margin:0; background:linear-gradient(180deg,#071029 0%, #071422 60%); color:#e6eef6;}
+    .container{max-width:1000px; margin:28px auto; padding:28px;}
+    header{display:flex; gap:18px; align-items:center; margin-bottom:20px;}
+    .avatar{
+      height:96px; width:96px; border-radius:12px; background:linear-gradient(135deg,var(--accent),#60a5fa);
+      display:flex; align-items:center; justify-content:center; font-weight:700; color:#072033; font-size:28px; box-shadow:0 6px 18px rgba(0,0,0,0.6);
+    }
+    h1{margin:0; font-size:28px}
+    .sub{color:var(--muted); margin-top:6px; font-size:14px}
+    .top-meta{margin-left:auto; text-align:right}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:12px; padding:18px; margin-bottom:18px; box-shadow:0 6px 18px rgba(2,6,23,0.7);}
+    nav{display:flex; gap:10px; flex-wrap:wrap; margin:14px 0;}
+    nav a{color:var(--accent); text-decoration:none; font-weight:600; padding:6px 10px; border-radius:8px;}
+    nav a:hover{filter:brightness(1.1)}
+    .grid{display:grid; grid-template-columns: 1fr 320px; gap:18px;}
+    @media (max-width:880px){ .grid{grid-template-columns:1fr} .top-meta{text-align:left; margin-top:8px}}
+    .section-title{font-size:16px; margin:0 0 10px 0; color:#cfe8f7}
+    .skills{display:flex; gap:8px; flex-wrap:wrap}
+    .skill{background:var(--glass); padding:8px 10px; border-radius:999px; color:var(--muted); font-weight:600; font-size:13px}
+    .progress{height:8px; background:rgba(255,255,255,0.03); border-radius:999px; overflow:hidden; margin-top:8px}
+    .progress > i{display:block; height:100%; background:linear-gradient(90deg,var(--accent),#60a5fa)}
+    .projects .project{padding:12px; border-radius:10px; background:rgba(255,255,255,0.015); margin-bottom:10px}
+    .muted{color:var(--muted)}
+    .contact-list{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px}
+    .contact-list li{display:flex; gap:8px; align-items:center; color:var(--muted)}
+    .btn{display:inline-block; background:var(--accent); color:#032036; padding:10px 14px; border-radius:10px; font-weight:700; text-decoration:none}
+    footer{margin-top:18px; color:var(--muted); text-align:center; font-size:13px}
+    /* small accessible focus styles */
+    a:focus, button:focus, input:focus, textarea:focus {outline:3px solid rgba(125,211,252,0.18); outline-offset:3px}
+    /* small animate */
+    .fade-in{animation:fadeIn .6s ease both}
+    @keyframes fadeIn{from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:none}}
+    form label{display:block; margin-bottom:6px; color:var(--muted); font-size:13px}
+    input[type="text"], input[type="email"], textarea{
+      width:100%; padding:10px; border-radius:8px; border:1px solid rgba(255,255,255,0.03);
+      background:transparent; color:inherit; resize:vertical;
+    }
+    small.helper{color:var(--muted); display:block; margin-top:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="fade-in">
+      <div class="avatar" aria-hidden="true">AK</div>
+      <div>
+        <h1>Aksha K. S</h1>
+        <div class="sub">BSc Computer Science — Department: BSc Computer Science • JCT College of Arts and Science</div>
+        <div class="muted" style="margin-top:6px">Skills: Communication · AI · Data Science · Coding</div>
+      </div>
+      <div class="top-meta">
+        <div class="card" style="padding:12px 14px; display:inline-block">
+          <div style="font-weight:700">Contact</div>
+          <div class="muted" style="font-size:13px; margin-top:6px">Email: <a href="mailto:akshaaksh3513@gmail.com" class="muted" style="color:var(--accent); text-decoration:none">akshaaksh3513@gmail.com</a></div>
+          <div class="muted" style="font-size:13px">Phone: <span style="color:var(--accent)">+91 98765 43210</span></div>
+          <div class="muted" style="font-size:13px">Address: <span style="color:var(--accent)">123 Sunrise Avenue, Chennai, Tamil Nadu</span></div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="fade-in" aria-label="Quick links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a href="#download" id="downloadBtn">Download CV</a>
+    </nav>
+
+    <main class="grid">
+      <section class="card fade-in" id="main-left">
+        <article id="about" style="margin-bottom:14px">
+          <h2 class="section-title">About</h2>
+          <p class="muted">Hello — I'm <strong>Aksha K. S</strong>, a BSc Computer Science student at JCT College of Arts and Science. I enjoy building simple, useful solutions using AI and data-driven thinking. I have strong communication skills and am learning full-stack coding, data science workflows, and practical AI applications.</p>
+        </article>
+
+        <article id="skills" style="margin-bottom:14px">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills" aria-hidden="false">
+            <span class="skill">Communication</span>
+            <span class="skill">AI / ML Basics</span>
+            <span class="skill">Data Science</span>
+            <span class="skill">Python</span>
+            <span class="skill">SQL</span>
+            <span class="skill">HTML & CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Git</span>
+          </div>
+
+          <div style="margin-top:12px">
+            <div class="muted">Technical proficiency</div>
+            <div class="progress" aria-hidden="true" title="AI & Data Science - 70%"><i style="width:70%"></i></div>
+            <small class="helper">AI & Data Science — intermediate</small>
+
+            <div class="progress" style="margin-top:8px" aria-hidden="true" title="Coding - 75%"><i style="width:75%"></i></div>
+            <small class="helper">Coding — improving with projects</small>
+
+            <div class="progress" style="margin-top:8px" aria-hidden="true" title="Communication - 85%"><i style="width:85%"></i></div>
+            <small class="helper">Communication — strong</small>
+          </div>
+        </article>
+
+        <article id="projects" class="projects" style="margin-bottom:14px">
+          <h2 class="section-title">Selected Projects</h2>
+
+          <div class="project">
+            <strong>Project: Student Performance Dashboard</strong>
+            <div class="muted" style="font-size:13px">A simple dashboard to visualize class scores using Python and basic charts. Built to practice data-cleaning and simple ML insights.</div>
+            <div style="margin-top:8px"><span class="skill">Python</span> <span class="skill">Pandas</span> <span class="skill">Data Visualization</span></div>
+          </div>
+
+          <div class="project">
+            <strong>Project: Mini Chatbot (AI basics)</strong>
+            <div class="muted" style="font-size:13px">A rule-based chatbot demo that answers course-related queries; good practice for NLP fundamentals and dialog handling.</div>
+            <div style="margin-top:8px"><span class="skill">NLP</span> <span class="skill">Python</span></div>
+          </div>
+
+          <div class="project">
+            <strong>Project: Personal Portfolio Website</strong>
+            <div class="muted" style="font-size:13px">This single-file portfolio (HTML/CSS/JS) — responsive, accessible, and easy to extend.</div>
+            <div style="margin-top:8px"><span class="skill">HTML</span> <span class="skill">CSS</span> <span class="skill">JavaScript</span></div>
+          </div>
+        </article>
+
+        <article id="education" style="margin-bottom:14px">
+          <h2 class="section-title">Education</h2>
+          <div class="muted"><strong>JCT College of Arts and Science</strong><br/>BSc Computer Science — Expected graduation: 2026 (example)</div>
+        </article>
+
+        <article id="download" style="margin-bottom:8px">
+          <h2 class="section-title">CV</h2>
+          <p class="muted">Click <a href="#download" id="cvLink" class="btn">Download CV (PDF)</a> to download a simple CV. (Demo: link triggers a sample PDF creation in-browser.)</p>
+        </article>
+      </section>
+
+      <aside class="card fade-in" id="side-right" aria-label="Sidebar">
+        <h3 class="section-title">Contact</h3>
+        <ul class="contact-list">
+          <li><strong>Email:</strong>&nbsp;<a href="mailto:akshaaksh3513@gmail.com" class="muted" style="color:var(--accent); text-decoration:none">akshaaksh3513@gmail.com</a></li>
+          <li><strong>Phone:</strong>&nbsp;<span class="muted">+91 98765 43210</span></li>
+          <li><strong>Address:</strong>&nbsp;<span class="muted">123 Sunrise Avenue, Chennai, Tamil Nadu</span></li>
+          <li><strong>College:</strong>&nbsp;<span class="muted">JCT College of Arts and Science</span></li>
+        </ul>
+
+        <hr style="border:none; height:1px; background:rgba(255,255,255,0.02); margin:12px 0">
+
+        <h3 class="section-title">Send a message</h3>
+        <form id="contactForm" aria-label="Contact form">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Hi Aksha — I'd like to connect..." required></textarea>
+
+          <div style="margin-top:10px; display:flex; gap:8px;">
+            <button type="submit" class="btn">Send</button>
+            <button type="button" id="clearBtn" style="background:transparent; border:1px solid rgba(255,255,255,0.05); color:var(--muted); padding:10px 12px; border-radius:8px">Clear</button>
+          </div>
+          <small class="helper">This form will open your mail client to send an email (no server required).</small>
+        </form>
+
+        <hr style="border:none; height:1px; background:rgba(255,255,255,0.02); margin:12px 0">
+
+        <h3 class="section-title">Quick links</h3>
+        <div style="display:flex; gap:8px; flex-wrap:wrap">
+          <a href="mailto:akshaaksh3513@gmail.com" class="btn" style="padding:8px 12px; font-size:13px">Email Me</a>
+          <a href="#projects" class="btn" style="padding:8px 12px; font-size:13px">My Projects</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="muted">Built by Aksha K. S • BSc Computer Science — JCT College of Arts and Science</div>
+      <div style="margin-top:6px; font-size:12px" class="muted">Last updated: <!-- dynamic date --><span id="lastUpdated"></span></div>
+    </footer>
+  </div>
+
+  <script>
+    // Fill dynamic date
+    document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();
+
+    // Contact form: opens mail client with prefilled details
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name || !email || !message){
+        alert('Please fill all fields.');
+        return;
+      }
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\\nEmail: ' + email + '\\n\\n' + message);
+      // open mail client
+      window.location.href = `mailto:akshaaksh3513@gmail.com?subject=${subject}&body=${body}`;
+    });
+
+    document.getElementById('clearBtn').addEventListener('click', function(){
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    });
+
+    // Demo: create a simple in-browser CV PDF (uses browser print as PDF)
+    document.getElementById('downloadBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      // Open a new window with a simplified CV layout and call print
+      const cvHtml = `
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <title>CV - Aksha K. S</title>
+            <style>
+              body{font-family:Arial,Helvetica,sans-serif; color:#111; padding:28px}
+              h1{margin-bottom:4px}
+              .muted{color:#444}
+              .section{margin-top:12px}
+              .skills{margin-top:6px}
+              .skill{display:inline-block; margin-right:8px; padding:4px 8px; background:#eef; border-radius:6px}
+            </style>
+          </head>
+          <body>
+            <h1>Aksha K. S</h1>
+            <div class="muted">BSc Computer Science — JCT College of Arts and Science</div>
+            <div class="section"><strong>Contact</strong><div>Email: akshaaksh3513@gmail.com • Phone: +91 98765 43210</div></div>
+            <div class="section"><strong>Skills</strong><div class="skills"><span class="skill">Communication</span><span class="skill">AI</span><span class="skill">Data Science</span><span class="skill">Coding</span></div></div>
+            <div class="section"><strong>Projects</strong><ul><li>Student Performance Dashboard</li><li>Mini Chatbot</li><li>Portfolio Website</li></ul></div>
+          </body>
+        </html>
+      `;
+      const w = window.open('', '_blank', 'width=800,height=600');
+      w.document.write(cvHtml);
+      w.document.close();
+      // Wait a moment then trigger print (user can choose Save as PDF)
+      setTimeout(()=> w.print(), 500);
+    });
+
+    // Simple accessibility: keyboard focus for nav links
+    document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', (e)=>{
+      // let browser handle scrolling
+    }));
+  </script>
+</body>
+</html>
